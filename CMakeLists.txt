@@ -8,3 +8,6 @@ SET(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(test test.cpp)
 target_compile_options(test PUBLIC "/permissive")
+
+# /permissive- would appear in cl.exe invocation
+# target_compile_options(test PUBLIC "/permissive-")
